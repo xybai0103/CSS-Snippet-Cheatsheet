@@ -1,0 +1,118 @@
+:root {
+ --bg-color: #151420;
+ --red: #b94358;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  color: var(--red);
+  position: relative;
+}
+
+header {
+  font-size: 300%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+body > p {
+  font-size: 120%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 51%;
+  color: white;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px 50px;
+  justify-content: center;
+  margin: 40px;
+}
+
+.grid-item {
+  border: dashed white;
+  flex: 0 0 33.333%;
+}
+
+h2 {
+  font-size: 230%;
+  background-color: var(--bg-color);
+  border: solid white;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+}
+
+.grid-item p {
+  font-size: 120%;
+  line-height: 1.3;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.CSS-code {
+  background-color: var(--red);
+  background: linear-gradient(0deg, var(--red), 80%, var(--bg-color));
+  width: 90%;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+pre {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+  line-height: 1.5;
+  color: white;
+  position: relative;
+  left: -55px;
+  padding-top: 15px;
+  user-select: all;
+  transition: 1s;
+}
+
+h3 {
+  font-size: 190%;
+}
+
+#heart::before {
+  content: "\2665";
+  font-size: 195%;
+  color: red;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+h2:hover, .grid-item:hover {
+  box-shadow: 0 0 50px 10px var(--red);
+}
+
+pre:hover {
+  font-size: 150%;
+}
+
+@media screen and (max-width: 992px) {
+    .grid-item {
+      width: 50%;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .grid-item {
+      width: 100%;
+    }
+  }
